@@ -1,0 +1,206 @@
+body {
+  background-color: #fed1d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.Content {
+  width: 85%;
+}
+
+.Header {
+  background-color: #d8fff2;
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em 1em;
+  margin-bottom: 2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Header-navigator {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 40%;
+  min-width: 30em;
+}
+
+.Header-items {
+  position: relative;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.Header-items a {
+  text-decoration: none;
+}
+
+.Header-items a:link {
+  color: #a52f61;
+}
+
+.Header-items a:visited {
+  color: #a52f61;
+}
+
+.Header-item {
+  min-width: 5em;
+  padding-left: 0.5em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Header-item:nth-of-type(1n+2) {
+  border-left: 3px solid  #a52f61;
+}
+
+.Header-logo {
+  width: 10%;
+}
+
+.Heading {
+  background-color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5em 5em;
+  margin-bottom: 2em;
+}
+
+.Heading-content {
+  width: 40%;
+}
+
+.Heading-img {
+  width: 45%;
+  border-radius: 20px;
+}
+
+.Circles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #d8d8ff;
+  padding: 5em 5em;
+  margin-bottom: 2em;
+}
+
+.Circles-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 35%;
+  -webkit-animation: sideToSide 8000ms ease infinite;
+          animation: sideToSide 8000ms ease infinite;
+}
+
+.Circles-div img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.Circles-subtitle {
+  font-weight: 900;
+  font-size: 50px;
+  text-align: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.Circles-verMas {
+  width: 60%;
+  height: 4em;
+  background-color: #ef79ab;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.Circles-verMas:hover {
+  opacity: 60%;
+}
+
+.Circles .Input-nombre {
+  display: inline-block;
+  width: 60%;
+  text-align: center;
+  margin: 1em;
+}
+
+.Circles .Input-nombre input {
+  width: 60%;
+}
+
+.Circles .Error {
+  background-color: crimson;
+  color: white;
+}
+
+@-webkit-keyframes sideToSide {
+  from {
+    opacity: 0%;
+  }
+  90% {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+@keyframes sideToSide {
+  from {
+    opacity: 0%;
+  }
+  90% {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

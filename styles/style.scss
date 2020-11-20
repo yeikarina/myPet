@@ -1,0 +1,135 @@
+body{
+    background-color: #fed1d8;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    
+    font-family: 'Source Code Pro', monospace;
+}
+
+.Content{
+    width: 85%;
+}
+.Header{
+    background-color: #d8fff2;
+    width: 85%;    
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 1em;
+    margin-bottom: 2em;
+    box-sizing: border-box;
+    &-navigator{
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        width: 40%;
+        min-width: 30em;
+    }
+    &-items{
+        position: relative;
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        top: 50%;
+        transform: translateY(-50%);
+        a{
+            text-decoration: none;
+        }
+        a:link{
+            color: #a52f61;
+        }
+        a:visited{
+            color: #a52f61;
+        }
+    }
+    &-item{
+        min-width: 5em;
+        padding-left: 0.5em;
+        box-sizing: border-box;
+    }
+    &-item:nth-of-type(1n+2){        
+        border-left:3px solid  #a52f61;
+    }
+    &-logo{
+        width: 10%;
+    }
+}
+.Heading{
+    background-color: antiquewhite;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 5em 5em;
+    margin-bottom: 2em;
+    &-content{
+        width: 40%;
+    }
+    &-img{
+        width: 45%;
+        border-radius: 20px;
+    }
+}
+.Circles{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: #d8d8ff;
+    padding: 5em 5em;
+    margin-bottom: 2em;
+    &-div{
+        display: flex;
+        flex-flow: row wrap;
+        width: 35%;
+        animation: sideToSide 8000ms ease infinite;
+        img{
+            width: 100%;
+            border-radius: 50%;
+            //clip-path: ellipse(50% 40% at 50% 50%);
+        }
+    }
+    &-subtitle{
+        font-weight: 900;
+        font-size: 50px;
+        text-align: center;
+        align-self: flex-end;
+    }
+    &-verMas{
+        width: 60%;
+        height: 4em;
+        background-color: #ef79ab;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+    }
+    &-verMas:hover{
+        opacity: 60%;
+    }
+    .Input-nombre{
+        display: inline-block;
+        width: 60%;
+        text-align: center;
+        margin: 1em;
+        input{
+            width: 60%;
+        }
+    }
+    .Error{
+        background-color: crimson;
+        color: white;
+    }
+}
+@keyframes  sideToSide{
+    from{
+        opacity: 0%;
+    }
+    90%{
+        opacity: 100%;
+    }
+    to{
+        opacity: 0%;
+    }
+}
